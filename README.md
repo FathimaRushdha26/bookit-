@@ -1,129 +1,107 @@
 # BookIt – Online Booking Management System
 
-## 1. Project Overview
+An online booking management system developed using PHP, MySQL, HTML, CSS and JavaScript with a custom Model–View–Controller (MVC) architecture.
 
-BookIt is an online booking management system developed using PHP and MySQL. It provides a simple and user-friendly platform where customers can browse available services, register for an account, log in, select services, and make bookings based on available dates and times.
+## Technologies Used
 
-The system also includes an administrator panel that allows administrators to manage services, customers, bookings, and view booking summaries and revenue information.
+- PHP 8.x
+- MySQL 8.x
+- PDO
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- AJAX / Fetch API
+- XAMPP
+- Apache
 
-The project follows a lightweight Model–View–Controller (MVC) architecture to organize the application logic and improve maintainability.
-
-## 2. Key Features
+## Features
 
 ### Customer Features
-- User registration and login.
-- Browse available services.
-- View service details.
-- Select preferred booking dates and times.
-- Create and manage bookings.
-- View booking history.
-- Manage customer profile.
+- User registration and login
+- Secure password authentication
+- Browse and search available services
+- Filter services by category
+- View service details
+- Check real-time appointment availability
+- Book appointments
+- Prevent double bookings
+- View booking history
+- Cancel upcoming bookings
+- Update personal profile
+- Change account password
 
 ### Administrator Features
-- Secure administrator login.
-- Manage services.
-- View and manage customer details.
-- Manage customer bookings.
-- View booking summaries.
-- Monitor revenue information.
+- Admin authentication
+- Dashboard with booking statistics
+- Manage services (CRUD operations)
+- Activate and deactivate services
+- Manage customer accounts
+- View and manage all bookings
+- Update booking statuses
+- View revenue and booking analytics
 
-## 3. Technologies Used
+## Architecture
 
-| Technology | Purpose |
-|---|---|
-| PHP | Backend development |
-| MySQL | Database management |
-| HTML5 | Web page structure |
-| CSS3 | Styling and layout |
-| JavaScript | Client-side functionality |
-| Bootstrap | Responsive user interface |
-| MVC Architecture | Application organization |
+Custom Model–View–Controller (MVC) Architecture.
 
-## 4. Project Architecture
+- **Model:** Handles database operations and business logic.
+- **View:** Manages application user interfaces.
+- **Controller:** Processes requests and connects models with views.
+- **Core:** Handles routing, database connectivity and helper functions.
 
-BookIt follows a lightweight MVC architecture.
+## Database
 
-- **Model:** Handles database operations and application data.
-- **View:** Displays the user interface.
-- **Controller:** Processes user requests and connects models with views.
+MySQL database: `bookit_db`
 
-## 5. Installation and Setup
+### Database Tables
+- `users`
+- `services`
+- `bookings`
 
-Follow these steps to run the project locally.
+Database file: `database/bookit_db.sql`
 
-### Prerequisites
-- XAMPP
-- PHP
-- MySQL
-- Web browser
-- Code editor (Visual Studio Code recommended)
+## Run the Project
 
-### Step 1: Clone the Repository
+1. Install XAMPP.
+2. Clone the repository.
 
 ```bash
 git clone https://github.com/FathimaRushdha26/bookit-.git
 ```
 
-### Step 2: Move the Project
-
-Copy the downloaded project folder into the XAMPP `htdocs` directory.
-
-Example:
-
-```text
-C:\xampp\htdocs\bookit-
-```
-
-### Step 3: Start XAMPP
-
-1. Open XAMPP Control Panel.
-2. Start Apache.
-3. Start MySQL.
-
-### Step 4: Create the Database
-
-1. Open phpMyAdmin.
-2. Create a new database.
-3. Import the database SQL file provided in the project.
-4. Update the database connection settings in the project configuration file.
-
-### Step 5: Run the Application
-
-Open your browser and visit:
+3. Move the project folder into the XAMPP `htdocs` directory.
+4. Start Apache and MySQL from XAMPP Control Panel.
+5. Open phpMyAdmin.
+6. Create a database named `bookit_db`.
+7. Import the `database/bookit_db.sql` file.
+8. Configure database credentials in `config/config.php`.
+9. Open the application in your browser:
 
 ```text
 http://localhost/bookit-/
 ```
 
-## 6. User Roles
+## Security Features
 
-| User Role | Description |
-|---|---|
-| Customer | Browses services and manages bookings. |
-| Administrator | Manages services, customers, bookings, and booking information. |
+- Password hashing using BCRYPT
+- SQL injection prevention using PDO prepared statements
+- Cross-Site Scripting (XSS) protection
+- Cross-Site Request Forgery (CSRF) protection
+- Role-Based Access Control (RBAC)
+- Secure session management
 
-## 7. Project Objectives
+## Developer
 
-- To simplify the service booking process.
-- To provide an online booking platform.
-- To reduce manual booking management.
-- To improve customer convenience.
-- To provide administrators with an efficient booking management system.
+**M.I.F. Rushdha**
 
-## 8. Future Enhancements
+B.Tech in Software Technology
 
-- Online payment integration.
-- Email and SMS booking notifications.
-- Advanced booking search and filtering.
-- Improved reporting and analytics.
-- Enhanced security features.
+Registration No: SOF/23/B1/03
 
-## 9. Author
-
-**Fathima Rushdha**
+University of Vocational Technology
 
 GitHub: [@FathimaRushdha26](https://github.com/FathimaRushdha26)
 
-## 10. License
+## License
 
-This project is developed for educational purposes.
+This project was developed for educational purposes.
